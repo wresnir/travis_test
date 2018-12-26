@@ -31,9 +31,10 @@ install:
 before_script:
 
 script:
+  - cd back_end
   - gulp
-  - npm run lint:ci
-  - npm run build:prod
+#  - npm run lint:ci
+#  - npm run build:prod
 
 git:
   depth: 1
