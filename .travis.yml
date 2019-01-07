@@ -22,15 +22,17 @@ addons:
       - g++-4.8
 
 before_install:
-  - npm install
+  #- npm install
 
 install:
   - travis_retry npm i
 
 before_script:
-
+    - npm install
+    - cd back_end
+    
 script:
-  - cd back_end
+  #- cd back_end
 #  - gulp
   - node app.js
 #  - 
