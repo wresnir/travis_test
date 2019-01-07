@@ -28,8 +28,8 @@ install:
   - travis_retry npm i
 
 before_script:
-    - npm install
-    - cd back_end
+  - cd back_end
+  - npm install -g
     
 script:
   #- cd back_end
